@@ -1,0 +1,12 @@
+query GetUser($id: ID!) {
+    getUser(input: $id) {
+        id
+        username
+        email
+        status
+        password
+        prefecture
+        createdAt
+        updatedAt
+    }
+}

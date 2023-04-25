@@ -1,0 +1,14 @@
+overwrite: true
+schema: "http://localhost:8081/query"
+documents:
+  - "src/components/**/*.graphql"
+generates:
+  ./src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typed-document-node"
+    config:
+      avoidOptionals:
+        objet: true
+        field: true
